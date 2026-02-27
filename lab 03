@@ -1,0 +1,34 @@
+public class cal {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+public static int subtract(int a, int b) {
+        return a - b;
+    }
+    public static int multiply(int a, int b) {
+        return a * b;
+    } 
+    public static int divide(int a, int b) {
+        }
+        return a / b;
+  public class maxval {
+ public static void main(String[]args){ 
+} 
+ static void max (int a,int b,int c){
+  if(a>b && a>c){
+   System.out.println("a is greater than b and c");
+  }
+  else if(b>a && b>c){
+   System.out.println("b is greater than a");
+  }
+ else if(c>a && c>b){ 
+    System.out.println("c is greater than a and b");
+ }  public class printtable {
+    public static void main(String[] args) {
+        int num = 5; // Change this to print the multiplication table of any number
+        System.out.println("Multiplication Table of " + num);
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i + " = " + (num * i));
+        }
+    }
+}}
