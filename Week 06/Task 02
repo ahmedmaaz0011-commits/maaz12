@@ -1,0 +1,26 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class averageprice {
+
+    public static void main(String[] args) throws IOException {
+
+        Path path = Path.of("C:\\java\\product.csv");
+        String content = Files.readString(path);
+
+        String[] lines = content.split("\n");
+
+        double sum = 0;
+
+        for (int i = 1; i < lines.length; i++) {
+
+            String[] cols = lines[i].split(",");
+            sum += Double.parseDouble(cols[1]); // price column
+        }
+
+        double average = sum / (lines.length - 1);
+
+        System.out.println("Average Price: " + average + " PKR");
+    }
+}
