@@ -1,0 +1,17 @@
+- Name: John Smith
+  Department: IT
+  Earning_per_year: 75000
+  Joining_date: January 15
+  Joining_year: 2020
+  Skills:
+   - Java
+   - Python
+   - SQL
+- Name: Sara Johnson
+  Department: HR
+  Earning_per_year: 65000
+  Joining_date: March 1
+  Joining_year: 2019
+  Skills:
+    - Recruitment
+    - Training
