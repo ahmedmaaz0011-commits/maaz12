@@ -1,0 +1,70 @@
+public class lab3 {
+
+    public static int sum(int x, int y) {
+        return x + y;
+    }
+
+    public static double sum(double x, double y) {
+        return x + y;
+    }
+
+    public static int difference(int x, int y) {
+        return x - y;
+    }
+
+    public static double difference(double x, double y) {
+        return x - y;
+    }
+
+    public static int product(int x, int y) {
+        return x * y;
+    }
+
+    public static double product(double x, double y) {
+        return x * y;
+    }
+
+    public static int quotient(int x, int y) {
+        if (y == 0) {
+            System.out.println("Cannot divide by zero");
+            return 0;
+        }
+        return x / y;
+    }
+
+    public static double quotient(double x, double y) {
+        if (y == 0) {
+            System.out.println("Cannot divide by zero");
+            return 0;
+        }
+        return x / y;
+    }
+
+    public static int maxOfTwo(int x, int y) {
+        return (x > y) ? x : y;
+    }
+
+    public static int maxOfThree(int x, int y, int z) {
+        if (x >= y && x >= z)
+            return x;
+        else if (y >= x && y >= z)
+            return y;
+        else
+            return z;
+    }
+
+    public static void main(String[] args) {
+
+        int num1 = 16;
+        int num2 = 4;
+        int num3 = 2;
+
+        System.out.println("Addition: " + sum(num1, num2));
+        System.out.println("Subtraction: " + difference(num1, num2));
+        System.out.println("Multiplication: " + product(num1, num2));
+        System.out.println("Division: " + quotient(num1, num2));
+
+        System.out.println("Max of Two: " + maxOfTwo(num1, num2));
+        System.out.println("Max of Three: " + maxOfThree(num1, num2, num3));
+    }
+}
