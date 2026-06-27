@@ -1,0 +1,13 @@
+public class SumArrayLab {
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+        int total = 0;
+
+        for (int num : numbers) {  // using enhanced for-loop
+            total += num;
+        }
+
+        System.out.println("Total sum of array = " + total);
+    }
+}
