@@ -1,0 +1,16 @@
+<post>
+    <caption>Just finished my Java project</caption>
+    <date>20 January</date>
+    <year>2024</year>
+    <time>3:45 PM</time>
+    <likes>15</likes>
+    <comments>
+        <Bob>Great Work!</Bob>
+        <Charlie>Congratulations!</Charlie>
+        <Diana>Weldone Alice!</Diana>
+    </comments>
+    <tags>
+        <tag1>#Programming</tag1>
+        <tag2>#Java</tag2>
+    </tags>
+</post>
