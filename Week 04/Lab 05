@@ -1,0 +1,89 @@
+public class lab5 {
+
+    public static int[][] addMatrices(int[][] m1, int[][] m2) {
+        int[][] result = new int[m1.length][m2[0].length];
+
+        for (int r = 0; r < m1.length; r++) {
+            for (int c = 0; c < m2[0].length; c++) {
+                result[r][c] = m1[r][c] + m2[r][c];
+                System.out.print(result[r][c] + " ");
+            }
+            System.out.println();
+        }
+        return result;
+    }
+
+    public static int[][] subtractMatrices(int[][] m1, int[][] m2) {
+        int[][] result = new int[m1.length][m2[0].length];
+
+        for (int r = 0; r < m1.length; r++) {
+            for (int c = 0; c < m2[0].length; c++) {
+                result[r][c] = m1[r][c] - m2[r][c];
+                System.out.print(result[r][c] + " ");
+            }
+            System.out.println();
+        }
+        return result;
+    }
+
+    public static int[][] transpose(int[][] matrix) {
+        int[][] trans = new int[matrix[0].length][matrix.length];
+
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[0].length; c++) {
+                trans[c][r] = matrix[r][c];
+            }
+        }
+
+        // print separately (different style)
+        for (int[] row : trans) {
+            for (int val : row) {
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
+
+        return trans;
+    }
+
+    public static String checkSymmetry(int[][] matrix) {
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[0].length; c++) {
+                if (matrix[r][c] != matrix[c][r]) {
+                    return "Not Symmetric";
+                }
+            }
+        }
+        return "Symmetric";
+    }
+
+    public static int diagonalSum(int[][] matrix) {
+        int total = 0;
+
+        for (int i = 0; i < matrix.length; i++) {
+            total += matrix[i][i];
+        }
+        return total;
+    }
+
+    public static void main(String[] args) {
+
+        int[][] mat1 = { {1, 2, 3}, {2, 3, 4}, {3, 4, 5} };
+        int[][] mat2 = { {1, 6, 3}, {2, 3, 8}, {3, 0, 5} };
+
+        System.out.println("Addition:");
+        int[][] sum = addMatrices(mat1, mat2);
+
+        System.out.println("Subtraction:");
+        int[][] diff = subtractMatrices(mat1, mat2);
+
+        System.out.println("Transpose:");
+        int[][] t = transpose(mat1);
+
+        System.out.println("Symmetry Check:");
+        System.out.println(checkSymmetry(mat1));
+
+        System.out.println("Diagonal Sum:");
+        System.out.println(diagonalSum(mat1));
+    }
+}
