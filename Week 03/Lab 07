@@ -1,0 +1,21 @@
+public class lab7 {
+    public static void main(String[] args) {
+
+        int[] arr = {14, 27, 35, 48, 56};
+        int target = 35;
+        int foundIndex = -1;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                foundIndex = i;
+                break;
+            }
+        }
+
+        if (foundIndex != -1) {
+            System.out.println("Number " + target + " found at index " + foundIndex);
+        } else {
+            System.out.println(target + " not found in array");
+        }
+    }
+}
