@@ -1,0 +1,27 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class gpatask1 {
+
+    public static void main(String[] args) throws IOException {
+
+        Path path = Path.of("C:\\java\\student.csv");
+
+        String content = Files.readString(path);
+        String[] lines = content.split("\n");
+
+        System.out.println(lines[0]); // header
+
+        for (int i = 1; i < lines.length; i++) {
+
+            String[] cols = lines[i].split(",");
+
+            double gpa = Double.parseDouble(cols[3]); // GPA column
+
+            if (gpa >= 3.5) {
+                System.out.println(lines[i]);
+            }
+        }
+    }
+}
