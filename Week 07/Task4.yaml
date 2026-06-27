@@ -1,0 +1,16 @@
+- customer_name: Alice
+  order_num: 1001
+  email: alice@gmail.com
+  date: January 15
+  year: 2024
+  order:
+    - product: Laptop
+      quantity: 2
+      price: 1200
+    - product: Mouse
+      quantity: 1
+      price: $25
+  shipping_address: 123 Main St, New York, NY 10001
+  total_amount: 2425
+  payment_method: credit card
+  order_status: shipped
