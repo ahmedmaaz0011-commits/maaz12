@@ -1,0 +1,19 @@
+public class lab2 {
+
+    public static int[][] displayMatrix(int[][] matrix) {
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[0].length; c++) {
+                System.out.print(matrix[r][c] + " ");
+            }
+            System.out.println();
+        }
+        return matrix;
+    }
+
+    public static void main(String[] args) {
+        int[][] a = { {9, 5, 3}, {0, 3, 4}, {6, 2, 0} };
+
+        int[][] output = displayMatrix(a);
+        System.out.println(output);
+    }
+}
