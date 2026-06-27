@@ -1,0 +1,24 @@
+[
+  {
+    "Customer name": "Alice Johnson",
+    "Order num": "#1001",
+    "Email": "alice@gmail.com",
+    "Date": "January 15",
+    "Year": "2024",
+    "Order":
+            [
+              {"product": "Laptop",
+              "quantity": 2,
+              "price": "1200"},
+              {
+                "product": "Mouse",
+                "quantity": 1,
+                "price": "25"
+              }
+            ],
+    "shipping address": "123 Main St, New York, NY 10001",
+    "total amount": "2425",
+    "payment method": "credit card",
+    "order status": "shipped"
+  }
+]
