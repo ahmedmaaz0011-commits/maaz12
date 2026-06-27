@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "John Smith",
+    "Department": "IT",
+    "Earning per year":75000,
+    "Joining date": "January 15",
+    "Joining year": 2020,
+    "Skills": "Java,Python,SQL"
+  },
+  {
+    "Name": "Sara Johnson",
+    "Department": "HR",
+    "Earning per year":65000,
+    "Joining date": "March 1",
+    "Joining year": 2019,
+    "Skills": "Recruitment and Training"
+  }
+]
