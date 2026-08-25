@@ -1,0 +1,129 @@
+public class Triangle {
+
+    private double side1;
+    private double side2;
+    private double side3;
+
+    // Default Constructor
+    public Triangle() {
+        side1 = 0;
+        side2 = 0;
+        side3 = 0;
+    }
+
+    // Equilateral Triangle
+    // All three sides are equal
+    public Triangle(double side) {
+        side1 = side;
+        side2 = side;
+        side3 = side;
+    }
+
+    // Isosceles Triangle
+    // Two sides are equal
+    public Triangle(double equalSide, double base) {
+        side1 = equalSide;
+        side2 = equalSide;
+        side3 = base;
+    }
+
+    // Scalene Triangle
+    // All three sides are different
+    public Triangle(double side1, double side2, double side3) {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+    }
+
+    // Getters
+    public double getSide1() {
+        return side1;
+    }
+
+    public double getSide2() {
+        return side2;
+    }
+
+    public double getSide3() {
+        return side3;
+    }
+
+    // Setters
+    public void setSide1(double side1) {
+        this.side1 = side1;
+    }
+
+    public void setSide2(double side2) {
+        this.side2 = side2;
+    }
+
+    public void setSide3(double side3) {
+        this.side3 = side3;
+    }
+
+    // Perimeter Method
+    public double perimeter() {
+        return side1 + side2 + side3;
+    }
+
+    // Area Method
+    // Heron's Formula
+    public double area() {
+
+        double s = perimeter() / 2;
+
+        return Math.sqrt(
+            s * (s - side1) *
+            (s - side2) *
+            (s - side3)
+        );
+    }
+
+    // Display Method
+    public void display() {
+        System.out.println("Side 1: " + side1);
+        System.out.println("Side 2: " + side2);
+        System.out.println("Side 3: " + side3);
+        System.out.println("Perimeter: " + perimeter());
+        System.out.println("Area: " + area());
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Equilateral Triangle
+        Triangle T1 = new Triangle(5);
+
+        // Isosceles Triangle
+        Triangle T2 = new Triangle(5, 6);
+
+        // Scalene Triangle
+        Triangle T3 = new Triangle(3, 4, 5);
+
+
+        System.out.println("Equilateral Triangle:");
+
+        T1.display();
+
+        System.out.println("Perimeter = " + T1.perimeter());
+        System.out.println("Area = " + T1.area());
+
+
+        System.out.println("\nIsosceles Triangle:");
+
+        T2.display();
+
+        System.out.println("Perimeter = " + T2.perimeter());
+        System.out.println("Area = " + T2.area());
+
+
+        System.out.println("\nScalene Triangle:");
+
+        T3.display();
+
+        System.out.println("Perimeter = " + T3.perimeter());
+        System.out.println("Area = " + T3.area());
+    }
+}
