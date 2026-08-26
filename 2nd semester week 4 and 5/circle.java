@@ -62,7 +62,7 @@ public class Point{
 }         
 
 import java.util.objects; 
-public class Circle{
+public class Circle implements Cloneable(){
 private double radius;
 private Point center; 
 public static int Objectcount=0;
