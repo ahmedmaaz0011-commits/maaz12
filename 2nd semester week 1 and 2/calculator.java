@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     public double average(double... numbers) {
-        if(numbers.length == 0) return 0; // edge case
+        if(numbers.length == 0) return 0; 
         double sum = 0;
         for(double n : numbers) sum += n;
         return sum / numbers.length;
@@ -30,7 +30,7 @@ public class Calculator {
     }
 
     public double maximum(double... numbers) {
-        if(numbers.length == 0) return 0; // edge case
+        if(numbers.length == 0) return 0; 
         double max = numbers[0];
         for(double n : numbers) if(n > max) max = n;
         return max;
