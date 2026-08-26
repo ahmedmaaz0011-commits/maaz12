@@ -77,7 +77,7 @@ public Circle(double radius,Point ceneter){
     throw new IllegalArgumentException("Radius must be greater than 0");
    }
    if(center==0){
-    throw new IllegalArgumentException("Ceneter cannot be null");
+    throw new IllegalArgumentException("Center cannot be null");
    } 
    this.radius=radius;
    this.center=center; 
