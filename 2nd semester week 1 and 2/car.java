@@ -37,11 +37,11 @@
     
     public void drive() {
         if(engineOn) { speed = 30; gear = 2; System.out.println(brand + " driving at " + speed); }
-        else System.out.println("Engine is OFF");
+        else { System.out.println("Engine is OFF");
     }
     public void moveFast() {
         if(engineOn) { speed += 20; if(gear<5) gear++; System.out.println("Speed: " + speed); }
-        else System.out.println("Cannot accelerate. Engine OFF"); // sensible rule
+        else { System.out.println("Cannot accelerate. Engine OFF"); // sensible rule
     }
     public void moveSlow() {
         if(engineOn) { speed -= 10; if(speed<0) speed=0; System.out.println("Speed: " + speed); }
