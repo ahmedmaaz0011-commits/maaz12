@@ -88,7 +88,7 @@ public double getRadius(){
   return this.radius;
 }  
 
-public double getCenter(){ 
+public Point getCenter(){ 
   return this.center;
 }  
 
