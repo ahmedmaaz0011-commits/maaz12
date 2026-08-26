@@ -36,3 +36,14 @@ public class Calculator {
         return max;
     }
 }
+System.out.println("\n--- Calculator Test ---");
+        Calculator c = new Calculator();
+        System.out.println("Normal: 5 + 3 = " + c.add(5,3)); 
+        System.out.println("Power: 2^3 = " + c.power(2,3)); 
+        System.out.println("Average: " + c.average(10,20,30)); 
+
+        System.out.println("Edge: Divide by 0 = " + c.divide(10,0)); 
+        System.out.println("Edge: Average empty = " + c.average()); 
+        System.out.println("Varargs Add: " + c.add(1,2,3,4,5));
+    }
+}
